@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named tutorial_02
+
+# Build rule for target.
+tutorial_02: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tutorial_02
+.PHONY : tutorial_02
+
+# fast build rule for target.
+tutorial_02/fast:
+	$(MAKE) -f CMakeFiles/tutorial_02.dir/build.make CMakeFiles/tutorial_02.dir/build
+.PHONY : tutorial_02/fast
+
+#=============================================================================
 # Target rules for targets named tutorial_opencv
 
 # Build rule for target.
@@ -190,6 +203,33 @@ tutorial_01/tutorial_01.cpp.s:
 	$(MAKE) -f CMakeFiles/tutorial_01.dir/build.make CMakeFiles/tutorial_01.dir/tutorial_01/tutorial_01.cpp.s
 .PHONY : tutorial_01/tutorial_01.cpp.s
 
+tutorial_02/main.o: tutorial_02/main.cpp.o
+
+.PHONY : tutorial_02/main.o
+
+# target to build an object file
+tutorial_02/main.cpp.o:
+	$(MAKE) -f CMakeFiles/tutorial_02.dir/build.make CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.o
+.PHONY : tutorial_02/main.cpp.o
+
+tutorial_02/main.i: tutorial_02/main.cpp.i
+
+.PHONY : tutorial_02/main.i
+
+# target to preprocess a source file
+tutorial_02/main.cpp.i:
+	$(MAKE) -f CMakeFiles/tutorial_02.dir/build.make CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.i
+.PHONY : tutorial_02/main.cpp.i
+
+tutorial_02/main.s: tutorial_02/main.cpp.s
+
+.PHONY : tutorial_02/main.s
+
+# target to generate assembly for a file
+tutorial_02/main.cpp.s:
+	$(MAKE) -f CMakeFiles/tutorial_02.dir/build.make CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.s
+.PHONY : tutorial_02/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -198,6 +238,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... tutorial_02"
 	@echo "... tutorial_opencv"
 	@echo "... tutorial_01"
 	@echo "... main.o"
@@ -206,6 +247,9 @@ help:
 	@echo "... tutorial_01/tutorial_01.o"
 	@echo "... tutorial_01/tutorial_01.i"
 	@echo "... tutorial_01/tutorial_01.s"
+	@echo "... tutorial_02/main.o"
+	@echo "... tutorial_02/main.i"
+	@echo "... tutorial_02/main.s"
 .PHONY : help
 
 

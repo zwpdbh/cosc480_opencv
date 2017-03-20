@@ -1,4 +1,5 @@
 /Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/tutorial_02.dir
 /Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/tutorial_opencv.dir
 /Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/tutorial_01.dir

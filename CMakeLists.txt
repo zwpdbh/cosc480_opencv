@@ -8,5 +8,7 @@ set(SOURCE_FILES main.cpp )
 # tutorial 01
 add_executable(tutorial_01 tutorial_01/tutorial_01.cpp)
 
+# tutorial 02
+add_executable(tutorial_02 tutorial_02/main.cpp)
 
 add_executable(tutorial_opencv ${SOURCE_FILES})
