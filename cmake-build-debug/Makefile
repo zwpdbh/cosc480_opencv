@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Harris_corner_detector
+
+# Build rule for target.
+Harris_corner_detector: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Harris_corner_detector
+.PHONY : Harris_corner_detector
+
+# fast build rule for target.
+Harris_corner_detector/fast:
+	$(MAKE) -f CMakeFiles/Harris_corner_detector.dir/build.make CMakeFiles/Harris_corner_detector.dir/build
+.PHONY : Harris_corner_detector/fast
+
+#=============================================================================
 # Target rules for targets named tutorial_02
 
 # Build rule for target.
@@ -137,6 +150,19 @@ tutorial_opencv/fast:
 .PHONY : tutorial_opencv/fast
 
 #=============================================================================
+# Target rules for targets named playground
+
+# Build rule for target.
+playground: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 playground
+.PHONY : playground
+
+# fast build rule for target.
+playground/fast:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/build
+.PHONY : playground/fast
+
+#=============================================================================
 # Target rules for targets named tutorial_01
 
 # Build rule for target.
@@ -148,6 +174,33 @@ tutorial_01: cmake_check_build_system
 tutorial_01/fast:
 	$(MAKE) -f CMakeFiles/tutorial_01.dir/build.make CMakeFiles/tutorial_01.dir/build
 .PHONY : tutorial_01/fast
+
+Harris_corner_detector/harris_corner_detector.o: Harris_corner_detector/harris_corner_detector.cpp.o
+
+.PHONY : Harris_corner_detector/harris_corner_detector.o
+
+# target to build an object file
+Harris_corner_detector/harris_corner_detector.cpp.o:
+	$(MAKE) -f CMakeFiles/Harris_corner_detector.dir/build.make CMakeFiles/Harris_corner_detector.dir/Harris_corner_detector/harris_corner_detector.cpp.o
+.PHONY : Harris_corner_detector/harris_corner_detector.cpp.o
+
+Harris_corner_detector/harris_corner_detector.i: Harris_corner_detector/harris_corner_detector.cpp.i
+
+.PHONY : Harris_corner_detector/harris_corner_detector.i
+
+# target to preprocess a source file
+Harris_corner_detector/harris_corner_detector.cpp.i:
+	$(MAKE) -f CMakeFiles/Harris_corner_detector.dir/build.make CMakeFiles/Harris_corner_detector.dir/Harris_corner_detector/harris_corner_detector.cpp.i
+.PHONY : Harris_corner_detector/harris_corner_detector.cpp.i
+
+Harris_corner_detector/harris_corner_detector.s: Harris_corner_detector/harris_corner_detector.cpp.s
+
+.PHONY : Harris_corner_detector/harris_corner_detector.s
+
+# target to generate assembly for a file
+Harris_corner_detector/harris_corner_detector.cpp.s:
+	$(MAKE) -f CMakeFiles/Harris_corner_detector.dir/build.make CMakeFiles/Harris_corner_detector.dir/Harris_corner_detector/harris_corner_detector.cpp.s
+.PHONY : Harris_corner_detector/harris_corner_detector.cpp.s
 
 main.o: main.cpp.o
 
@@ -176,6 +229,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/tutorial_opencv.dir/build.make CMakeFiles/tutorial_opencv.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+playground/playground.o: playground/playground.cpp.o
+
+.PHONY : playground/playground.o
+
+# target to build an object file
+playground/playground.cpp.o:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/playground/playground.cpp.o
+.PHONY : playground/playground.cpp.o
+
+playground/playground.i: playground/playground.cpp.i
+
+.PHONY : playground/playground.i
+
+# target to preprocess a source file
+playground/playground.cpp.i:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/playground/playground.cpp.i
+.PHONY : playground/playground.cpp.i
+
+playground/playground.s: playground/playground.cpp.s
+
+.PHONY : playground/playground.s
+
+# target to generate assembly for a file
+playground/playground.cpp.s:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/playground/playground.cpp.s
+.PHONY : playground/playground.cpp.s
+
 tutorial_01/tutorial_01.o: tutorial_01/tutorial_01.cpp.o
 
 .PHONY : tutorial_01/tutorial_01.o
@@ -203,32 +283,32 @@ tutorial_01/tutorial_01.cpp.s:
 	$(MAKE) -f CMakeFiles/tutorial_01.dir/build.make CMakeFiles/tutorial_01.dir/tutorial_01/tutorial_01.cpp.s
 .PHONY : tutorial_01/tutorial_01.cpp.s
 
-tutorial_02/main.o: tutorial_02/main.cpp.o
+tutorial_02/tutorial_02.o: tutorial_02/tutorial_02.cpp.o
 
-.PHONY : tutorial_02/main.o
+.PHONY : tutorial_02/tutorial_02.o
 
 # target to build an object file
-tutorial_02/main.cpp.o:
-	$(MAKE) -f CMakeFiles/tutorial_02.dir/build.make CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.o
-.PHONY : tutorial_02/main.cpp.o
+tutorial_02/tutorial_02.cpp.o:
+	$(MAKE) -f CMakeFiles/tutorial_02.dir/build.make CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.o
+.PHONY : tutorial_02/tutorial_02.cpp.o
 
-tutorial_02/main.i: tutorial_02/main.cpp.i
+tutorial_02/tutorial_02.i: tutorial_02/tutorial_02.cpp.i
 
-.PHONY : tutorial_02/main.i
+.PHONY : tutorial_02/tutorial_02.i
 
 # target to preprocess a source file
-tutorial_02/main.cpp.i:
-	$(MAKE) -f CMakeFiles/tutorial_02.dir/build.make CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.i
-.PHONY : tutorial_02/main.cpp.i
+tutorial_02/tutorial_02.cpp.i:
+	$(MAKE) -f CMakeFiles/tutorial_02.dir/build.make CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.i
+.PHONY : tutorial_02/tutorial_02.cpp.i
 
-tutorial_02/main.s: tutorial_02/main.cpp.s
+tutorial_02/tutorial_02.s: tutorial_02/tutorial_02.cpp.s
 
-.PHONY : tutorial_02/main.s
+.PHONY : tutorial_02/tutorial_02.s
 
 # target to generate assembly for a file
-tutorial_02/main.cpp.s:
-	$(MAKE) -f CMakeFiles/tutorial_02.dir/build.make CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.s
-.PHONY : tutorial_02/main.cpp.s
+tutorial_02/tutorial_02.cpp.s:
+	$(MAKE) -f CMakeFiles/tutorial_02.dir/build.make CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.s
+.PHONY : tutorial_02/tutorial_02.cpp.s
 
 # Help Target
 help:
@@ -238,18 +318,26 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Harris_corner_detector"
 	@echo "... tutorial_02"
 	@echo "... tutorial_opencv"
+	@echo "... playground"
 	@echo "... tutorial_01"
+	@echo "... Harris_corner_detector/harris_corner_detector.o"
+	@echo "... Harris_corner_detector/harris_corner_detector.i"
+	@echo "... Harris_corner_detector/harris_corner_detector.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... playground/playground.o"
+	@echo "... playground/playground.i"
+	@echo "... playground/playground.s"
 	@echo "... tutorial_01/tutorial_01.o"
 	@echo "... tutorial_01/tutorial_01.i"
 	@echo "... tutorial_01/tutorial_01.s"
-	@echo "... tutorial_02/main.o"
-	@echo "... tutorial_02/main.i"
-	@echo "... tutorial_02/main.s"
+	@echo "... tutorial_02/tutorial_02.o"
+	@echo "... tutorial_02/tutorial_02.i"
+	@echo "... tutorial_02/tutorial_02.s"
 .PHONY : help
 
 

@@ -48,7 +48,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/Harris_corner_detector.dir/DependInfo.cmake"
   "CMakeFiles/tutorial_02.dir/DependInfo.cmake"
   "CMakeFiles/tutorial_opencv.dir/DependInfo.cmake"
+  "CMakeFiles/playground.dir/DependInfo.cmake"
   "CMakeFiles/tutorial_01.dir/DependInfo.cmake"
   )

@@ -57,38 +57,38 @@ include CMakeFiles/tutorial_02.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tutorial_02.dir/flags.make
 
-CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.o: CMakeFiles/tutorial_02.dir/flags.make
-CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.o: ../tutorial_02/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.o -c /Users/zw/code/OpenCV/tutorial_opencv/tutorial_02/main.cpp
+CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.o: CMakeFiles/tutorial_02.dir/flags.make
+CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.o: ../tutorial_02/tutorial_02.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.o -c /Users/zw/code/OpenCV/tutorial_opencv/tutorial_02/tutorial_02.cpp
 
-CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zw/code/OpenCV/tutorial_opencv/tutorial_02/main.cpp > CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.i
+CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zw/code/OpenCV/tutorial_opencv/tutorial_02/tutorial_02.cpp > CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.i
 
-CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zw/code/OpenCV/tutorial_opencv/tutorial_02/main.cpp -o CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.s
+CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zw/code/OpenCV/tutorial_opencv/tutorial_02/tutorial_02.cpp -o CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.s
 
-CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.o.requires:
+CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.o.requires:
 
-.PHONY : CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.o.requires
+.PHONY : CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.o.requires
 
-CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.o.provides: CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/tutorial_02.dir/build.make CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.o.provides.build
-.PHONY : CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.o.provides
+CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.o.provides: CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tutorial_02.dir/build.make CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.o.provides.build
+.PHONY : CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.o.provides
 
-CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.o.provides.build: CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.o
+CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.o.provides.build: CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.o
 
 
 # Object files for target tutorial_02
 tutorial_02_OBJECTS = \
-"CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.o"
+"CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.o"
 
 # External object files for target tutorial_02
 tutorial_02_EXTERNAL_OBJECTS =
 
-tutorial_02: CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.o
+tutorial_02: CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.o
 tutorial_02: CMakeFiles/tutorial_02.dir/build.make
 tutorial_02: CMakeFiles/tutorial_02.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tutorial_02"
@@ -99,7 +99,7 @@ CMakeFiles/tutorial_02.dir/build: tutorial_02
 
 .PHONY : CMakeFiles/tutorial_02.dir/build
 
-CMakeFiles/tutorial_02.dir/requires: CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.o.requires
+CMakeFiles/tutorial_02.dir/requires: CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.o.requires
 
 .PHONY : CMakeFiles/tutorial_02.dir/requires
 

@@ -60,13 +60,50 @@ CMAKE_SOURCE_DIR = /Users/zw/code/OpenCV/tutorial_opencv
 CMAKE_BINARY_DIR = /Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/Harris_corner_detector.dir
+
+# All Build rule for target.
+CMakeFiles/Harris_corner_detector.dir/all:
+	$(MAKE) -f CMakeFiles/Harris_corner_detector.dir/build.make CMakeFiles/Harris_corner_detector.dir/depend
+	$(MAKE) -f CMakeFiles/Harris_corner_detector.dir/build.make CMakeFiles/Harris_corner_detector.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Harris_corner_detector"
+.PHONY : CMakeFiles/Harris_corner_detector.dir/all
+
+# Include target in all.
+all: CMakeFiles/Harris_corner_detector.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Harris_corner_detector.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Harris_corner_detector.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Harris_corner_detector.dir/rule
+
+# Convenience name for target.
+Harris_corner_detector: CMakeFiles/Harris_corner_detector.dir/rule
+
+.PHONY : Harris_corner_detector
+
+# clean rule for target.
+CMakeFiles/Harris_corner_detector.dir/clean:
+	$(MAKE) -f CMakeFiles/Harris_corner_detector.dir/build.make CMakeFiles/Harris_corner_detector.dir/clean
+.PHONY : CMakeFiles/Harris_corner_detector.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Harris_corner_detector.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/tutorial_02.dir
 
 # All Build rule for target.
 CMakeFiles/tutorial_02.dir/all:
 	$(MAKE) -f CMakeFiles/tutorial_02.dir/build.make CMakeFiles/tutorial_02.dir/depend
 	$(MAKE) -f CMakeFiles/tutorial_02.dir/build.make CMakeFiles/tutorial_02.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target tutorial_02"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target tutorial_02"
 .PHONY : CMakeFiles/tutorial_02.dir/all
 
 # Include target in all.
@@ -103,7 +140,7 @@ clean: CMakeFiles/tutorial_02.dir/clean
 CMakeFiles/tutorial_opencv.dir/all:
 	$(MAKE) -f CMakeFiles/tutorial_opencv.dir/build.make CMakeFiles/tutorial_opencv.dir/depend
 	$(MAKE) -f CMakeFiles/tutorial_opencv.dir/build.make CMakeFiles/tutorial_opencv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target tutorial_opencv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target tutorial_opencv"
 .PHONY : CMakeFiles/tutorial_opencv.dir/all
 
 # Include target in all.
@@ -134,13 +171,50 @@ clean: CMakeFiles/tutorial_opencv.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/playground.dir
+
+# All Build rule for target.
+CMakeFiles/playground.dir/all:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/depend
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target playground"
+.PHONY : CMakeFiles/playground.dir/all
+
+# Include target in all.
+all: CMakeFiles/playground.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/playground.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/playground.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/playground.dir/rule
+
+# Convenience name for target.
+playground: CMakeFiles/playground.dir/rule
+
+.PHONY : playground
+
+# clean rule for target.
+CMakeFiles/playground.dir/clean:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/clean
+.PHONY : CMakeFiles/playground.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/playground.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/tutorial_01.dir
 
 # All Build rule for target.
 CMakeFiles/tutorial_01.dir/all:
 	$(MAKE) -f CMakeFiles/tutorial_01.dir/build.make CMakeFiles/tutorial_01.dir/depend
 	$(MAKE) -f CMakeFiles/tutorial_01.dir/build.make CMakeFiles/tutorial_01.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target tutorial_01"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target tutorial_01"
 .PHONY : CMakeFiles/tutorial_01.dir/all
 
 # Include target in all.

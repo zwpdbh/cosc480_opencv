@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/zw/code/OpenCV/tutorial_opencv/tutorial_02/main.cpp" "/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/tutorial_02.dir/tutorial_02/main.cpp.o"
+  "/Users/zw/code/OpenCV/tutorial_opencv/tutorial_02/tutorial_02.cpp" "/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/tutorial_02.dir/tutorial_02/tutorial_02.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

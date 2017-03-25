@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/zw/code/OpenCV/tutorial_opencv/tutorial_02/main.cpp
+/Users/zw/code/OpenCV/tutorial_opencv/tutorial_02/tutorial_02.cpp
 iostream
 -
 opencv2/opencv.hpp
