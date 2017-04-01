@@ -17,16 +17,6 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug"/>
 				<Option type="4"/>
@@ -37,89 +27,11 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Harris_corner_detector">
-				<Option output="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Harris_corner_detector" prefix_auto="0" extension_auto="0"/>
+			<Target title="edit_cache">
 				<Option working_dir="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-				</Compiler>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 Harris_corner_detector"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Harris_corner_detector/fast">
-				<Option output="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Harris_corner_detector" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 Harris_corner_detector/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tutorial_02">
-				<Option output="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/tutorial_02" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 tutorial_02"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tutorial_02/fast">
-				<Option output="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/tutorial_02" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 tutorial_02/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -132,13 +44,13 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 tutorial_opencv"/>
@@ -154,16 +66,148 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 tutorial_opencv/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Harris_corner_detector">
+				<Option output="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Harris_corner_detector" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 Harris_corner_detector"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Harris_corner_detector/fast">
+				<Option output="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Harris_corner_detector" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 Harris_corner_detector/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tutorial_02">
+				<Option output="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/tutorial_02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 tutorial_02"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tutorial_02/fast">
+				<Option output="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/tutorial_02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 tutorial_02/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Shi-Tomasi_corner_detector">
+				<Option output="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Shi-Tomasi_corner_detector" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 Shi-Tomasi_corner_detector"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Shi-Tomasi_corner_detector/fast">
+				<Option output="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Shi-Tomasi_corner_detector" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 Shi-Tomasi_corner_detector/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -176,13 +220,13 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 playground"/>
@@ -198,13 +242,13 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 playground/fast"/>
@@ -213,45 +257,89 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tutorial_01">
-				<Option output="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/tutorial_01" prefix_auto="0" extension_auto="0"/>
+			<Target title="my_feature_detector">
+				<Option output="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/my_feature_detector" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 tutorial_01"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_feature_detector"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tutorial_01/fast">
-				<Option output="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/tutorial_01" prefix_auto="0" extension_auto="0"/>
+			<Target title="my_feature_detector/fast">
+				<Option output="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/my_feature_detector" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 tutorial_01/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_feature_detector/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tutorial_01_Mat">
+				<Option output="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/tutorial_01_Mat" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 tutorial_01_Mat"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tutorial_01_Mat/fast">
+				<Option output="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/tutorial_01_Mat" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 tutorial_01_Mat/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -261,14 +349,17 @@
 		<Unit filename="/Users/zw/code/OpenCV/tutorial_opencv/Harris_corner_detector/harris_corner_detector.cpp">
 			<Option target="Harris_corner_detector"/>
 		</Unit>
+		<Unit filename="/Users/zw/code/OpenCV/tutorial_opencv/Shi-Tomasi_corner_detector/shi-Tomasi_corner_detector.cpp">
+			<Option target="Shi-Tomasi_corner_detector"/>
+		</Unit>
 		<Unit filename="/Users/zw/code/OpenCV/tutorial_opencv/main.cpp">
 			<Option target="tutorial_opencv"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/OpenCV/tutorial_opencv/playground/playground.cpp">
 			<Option target="playground"/>
 		</Unit>
-		<Unit filename="/Users/zw/code/OpenCV/tutorial_opencv/tutorial_01/tutorial_01.cpp">
-			<Option target="tutorial_01"/>
+		<Unit filename="/Users/zw/code/OpenCV/tutorial_opencv/tutorial_01_Mat/tutorial_01_Mat.cpp">
+			<Option target="tutorial_01_Mat"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/OpenCV/tutorial_opencv/tutorial_02/tutorial_02.cpp">
 			<Option target="tutorial_02"/>

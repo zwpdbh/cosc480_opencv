@@ -6,7 +6,7 @@ set(CMAKE_CXX_FLAGS "-I/usr/local/Cellar/opencv3/3.2.0/include/opencv -I/usr/loc
 set(SOURCE_FILES main.cpp)
 
 # tutorial 01
-add_executable(tutorial_01 tutorial_01/tutorial_01.cpp)
+add_executable(tutorial_01_Mat tutorial_01_Mat/tutorial_01_Mat.cpp)
 
 # tutorial 02
 add_executable(tutorial_02 tutorial_02/tutorial_02.cpp)
@@ -16,5 +16,11 @@ add_executable(playground playground/playground.cpp)
 
 # Harris corner detector
 add_executable(Harris_corner_detector Harris_corner_detector/harris_corner_detector.cpp)
+
+# Shi-Tomasi corner detector
+add_executable(Shi-Tomasi_corner_detector Shi-Tomasi_corner_detector/shi-Tomasi_corner_detector.cpp)
+
+# my feature detector
+add_executable(my_feature_detector my_feature_detector/my_feature_detector.cp)
 
 add_executable(tutorial_opencv ${SOURCE_FILES})

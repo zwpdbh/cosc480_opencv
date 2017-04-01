@@ -1,7 +1,9 @@
-/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/tutorial_opencv.dir
 /Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/Harris_corner_detector.dir
 /Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/tutorial_02.dir
-/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/tutorial_opencv.dir
+/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/Shi-Tomasi_corner_detector.dir
 /Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/playground.dir
-/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/tutorial_01.dir
+/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/my_feature_detector.dir
+/Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug/CMakeFiles/tutorial_01_Mat.dir
