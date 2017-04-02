@@ -21,6 +21,6 @@ add_executable(Harris_corner_detector Harris_corner_detector/harris_corner_detec
 add_executable(Shi-Tomasi_corner_detector Shi-Tomasi_corner_detector/shi-Tomasi_corner_detector.cpp)
 
 # my feature detector
-add_executable(my_feature_detector my_feature_detector/my_feature_detector.cp)
+add_executable(my_feature_detector my_feature_detector/my_feature_detector.cpp)
 
 add_executable(tutorial_opencv ${SOURCE_FILES})

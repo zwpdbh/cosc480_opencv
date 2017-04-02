@@ -282,6 +282,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/tutorial_opencv.dir/build.make CMakeFiles/tutorial_opencv.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+my_feature_detector/my_feature_detector.o: my_feature_detector/my_feature_detector.cpp.o
+
+.PHONY : my_feature_detector/my_feature_detector.o
+
+# target to build an object file
+my_feature_detector/my_feature_detector.cpp.o:
+	$(MAKE) -f CMakeFiles/my_feature_detector.dir/build.make CMakeFiles/my_feature_detector.dir/my_feature_detector/my_feature_detector.cpp.o
+.PHONY : my_feature_detector/my_feature_detector.cpp.o
+
+my_feature_detector/my_feature_detector.i: my_feature_detector/my_feature_detector.cpp.i
+
+.PHONY : my_feature_detector/my_feature_detector.i
+
+# target to preprocess a source file
+my_feature_detector/my_feature_detector.cpp.i:
+	$(MAKE) -f CMakeFiles/my_feature_detector.dir/build.make CMakeFiles/my_feature_detector.dir/my_feature_detector/my_feature_detector.cpp.i
+.PHONY : my_feature_detector/my_feature_detector.cpp.i
+
+my_feature_detector/my_feature_detector.s: my_feature_detector/my_feature_detector.cpp.s
+
+.PHONY : my_feature_detector/my_feature_detector.s
+
+# target to generate assembly for a file
+my_feature_detector/my_feature_detector.cpp.s:
+	$(MAKE) -f CMakeFiles/my_feature_detector.dir/build.make CMakeFiles/my_feature_detector.dir/my_feature_detector/my_feature_detector.cpp.s
+.PHONY : my_feature_detector/my_feature_detector.cpp.s
+
 playground/playground.o: playground/playground.cpp.o
 
 .PHONY : playground/playground.o
@@ -387,6 +414,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... my_feature_detector/my_feature_detector.o"
+	@echo "... my_feature_detector/my_feature_detector.i"
+	@echo "... my_feature_detector/my_feature_detector.s"
 	@echo "... playground/playground.o"
 	@echo "... playground/playground.i"
 	@echo "... playground/playground.s"

@@ -1,15 +1,4 @@
 /Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/zw/code/OpenCV/tutorial_opencv
 -- Configuring done
-CMake Error at CMakeLists.txt:24 (add_executable):
-  Cannot find source file:
-
-    my_feature_detector/my_feature_detector.cp
-
-  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
-  .hxx .in .txx
-
-
-CMake Error: CMake can not determine linker language for target: my_feature_detector
-CMake Error: Cannot determine link language for target "my_feature_detector".
 -- Generating done
 -- Build files have been written to: /Users/zw/code/OpenCV/tutorial_opencv/cmake-build-debug

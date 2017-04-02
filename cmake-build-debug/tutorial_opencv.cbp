@@ -355,6 +355,9 @@
 		<Unit filename="/Users/zw/code/OpenCV/tutorial_opencv/main.cpp">
 			<Option target="tutorial_opencv"/>
 		</Unit>
+		<Unit filename="/Users/zw/code/OpenCV/tutorial_opencv/my_feature_detector/my_feature_detector.cpp">
+			<Option target="my_feature_detector"/>
+		</Unit>
 		<Unit filename="/Users/zw/code/OpenCV/tutorial_opencv/playground/playground.cpp">
 			<Option target="playground"/>
 		</Unit>
