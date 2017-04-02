@@ -1,88 +1,63 @@
-//
-// Created by zwpdbh on 01/04/2017.
-//
-
-#include <opencv2/imgcodecs.hpp>
-#include <opencv2/highgui.hpp>
-#include <opencv2/imgproc.hpp>
+#include "opencv2/imgcodecs.hpp"
+#include "opencv2/highgui.hpp"
+#include "opencv2/imgproc.hpp"
 #include <iostream>
 
 using namespace cv;
 using namespace std;
 
-Mat src, src_gray;
-Mat myShiTomasi_dst, myShiTomasi_copy;
-Mat mc;
-
-RNG rng(12345);
-
-const char* myShiTomasi_window = "My Shi Tomasi corner detector";
-
-int myShiTomasi_qualityLevel = 50;
-int myHarris_qualityLevel = 50;
-int max_qualityLevel = 100;
-
-double myHarris_minVal; double myHarris_maxVal;
-double myShiTomasi_minVal; double myShiTomasi_maxVal;
+int qualityLevel = 50;
+int maxQuanlityLevel = 100;
+double maximumEigenvalue;
+double minimumEigenvalue;
 
 
-void myShiTomasi_function( int, void* ) {
-    myShiTomasi_copy = src.clone();
-    if (myShiTomasi_qualityLevel < 1) {
-        myShiTomasi_qualityLevel = 1;
+Mat srcImg;
+Mat graySrcImg;
+Mat featureMatrix;
+
+RNG rng = RNG(123456);
+const char *windowName = "My Shi Tomasi corner detector";
+
+void myShiTomasiFunction(int, void *) {
+    Mat srcImg_copy = srcImg.clone();
+
+    if (qualityLevel < 1) {
+        qualityLevel = 1;
     }
-
-    for (int j = 0; j < src_gray.rows; ++j) {
-        for (int i = 0; i < src_gray.cols; ++i) {
-            if (myShiTomasi_dst.at(j, i) > myShiTomasi_minVal + (myShiTomasi_maxVal - myShiTomasi_minVal) * myShiTomasi_qualityLevel / max_qualityLevel) {
-                circle(myShiTomasi_copy, Point(i, j), 4, Scalar(rng.uniform(0, 255), rng.uniform(0, 255), rng.uniform(0, 255)), -1, 8, 0);
+    for (int j = 0; j < graySrcImg.rows; j++) {
+        for (int i = 0; i < graySrcImg.cols; ++i) {
+            if (featureMatrix.at<float>(j, i) > minimumEigenvalue + (maximumEigenvalue - minimumEigenvalue)
+                                                                    * qualityLevel / maxQuanlityLevel) {
+                Point p = Point(i, j);
+                int radius = 4;
+                Scalar scalar = Scalar(rng.uniform(0, 255), rng.uniform(0, 255), rng.uniform(0, 255));
+                circle(srcImg_copy, p, radius, scalar, -1);
             }
         }
     }
-    imshow(myShiTomasi_window, myShiTomasi_copy);
-
+    imshow(windowName, srcImg_copy);
 }
 
-int main(int, char** argv){
-    // 1. read image and get its gray associated one
-    if (argv[1] == NULL) {
-        string imgName = "../data/building.jpg";
-        src = imread(imgName, IMREAD_COLOR);
-    } else {
-        src = imread(argv[1], IMREAD_COLOR);
-    }
+int main(int, char **argv) {
+    string inputImg = "../data/building.jpg";
+    srcImg = imread(inputImg, IMREAD_COLOR);
 
-    if (src.empty()) {
-        cout << "Can not find input image." << endl;
+    if (srcImg.empty()) {
+        cout << "Input image not found." << endl;
         return -1;
     }
 
-    // 2.
-    int blockSize = 3;
-    int apertureSize = 3;
+    cvtColor(srcImg, graySrcImg, COLOR_BGR2GRAY);
 
-    myShiTomasi_dst = Mat::zeros(src_gray.size(), CV_32FC(6));
-    mc = Mat::zeros(src_gray.size(), CV_32FC1);
+    featureMatrix = Mat::zeros(graySrcImg.size(), CV_32FC1);
+    cornerMinEigenVal(graySrcImg, featureMatrix, 3, 3, BORDER_DEFAULT);
+    minMaxLoc(featureMatrix, &minimumEigenvalue, &maximumEigenvalue);
 
-    cornerEigenValsAndVecs(src_gray, myShiTomasi_dst, blockSize, apertureSize, BORDER_DEFAULT);
-
-    // 3. calculate mc
-    for (int j = 0; j < src_gray.rows; j++) {
-        for (int i = 0; i < src_gray.cols; i++) {
-            float lambda1 = myShiTomasi_dst.at<Vec6f>(j, i)[0];
-            float lambda2 = myShiTomasi_dst.at(j, i)[1];
-            mc.at(j, i) = lambda1 * lambda2 - 0.04f * pow((lambda1 + lambda2), 2);
-        }
-    }
-    minMaxLoc(mc, &myShiTomasi_minVal, &myShiTomasi_maxVal, 0, 0, Mat());
-
-    // 4. create window and track bar
-    namedWindow(myShiTomasi_window, WINDOW_AUTOSIZE);
-    createTrackbar("Quality level:", myShiTomasi_window, &myShiTomasi_qualityLevel, max_qualityLevel, myShiTomasi_function);
-//    myShiTomasi_function(0, 0);
-
+    namedWindow(windowName);
+    createTrackbar("Quality level: ", windowName, &qualityLevel, maxQuanlityLevel, myShiTomasiFunction);
+    myShiTomasiFunction(0, 0);
     waitKey(0);
 
     return 0;
-
 }

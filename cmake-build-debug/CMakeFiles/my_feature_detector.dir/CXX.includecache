@@ -8,11 +8,11 @@
 
 /Users/zw/code/OpenCV/tutorial_opencv/my_feature_detector/my_feature_detector.cpp
 opencv2/imgcodecs.hpp
--
+/Users/zw/code/OpenCV/tutorial_opencv/my_feature_detector/opencv2/imgcodecs.hpp
 opencv2/highgui.hpp
--
+/Users/zw/code/OpenCV/tutorial_opencv/my_feature_detector/opencv2/highgui.hpp
 opencv2/imgproc.hpp
--
+/Users/zw/code/OpenCV/tutorial_opencv/my_feature_detector/opencv2/imgproc.hpp
 iostream
 -
 
