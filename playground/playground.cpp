@@ -1,70 +1,62 @@
-#include "opencv2/imgcodecs.hpp"
-#include "opencv2/highgui.hpp"
-#include "opencv2/imgproc.hpp"
-#include <iostream>
+//
+//  main.cpp
+//  SURF_feature_ descriptor
+//
+//  Created by zwpdbh on 02/04/2017.
+//  Copyright © 2017 Otago. All rights reserved.
+//
 
+#include <stdio.h>
+#include <iostream>
+#include "opencv2/core.hpp"
+#include "opencv2/features2d.hpp"
+#include "opencv2/xfeatures2d.hpp"
+#include "opencv2/highgui.hpp"
 using namespace cv;
+using namespace cv::xfeatures2d;
 using namespace std;
 
-Mat src, src_gray;
+/* @function main */
+int main( int argc, char** argv )
+{
 
+    string imgname1 = "../data/box_in_scene.png";
+    string imgname2 = "../data/box.png";
 
-Mat myShiTomasi_dst;
-Mat myShiTomasi_copy;
-int myShiTomasi_qualityLevel = 50;
+    Mat img_1 = imread( imgname1, IMREAD_GRAYSCALE );
+    Mat img_2 = imread( imgname2, IMREAD_GRAYSCALE );
 
-
-int max_qualityLevel = 100;
-
-
-double myShiTomasi_minVal;
-double myShiTomasi_maxVal;
-
-RNG rng(12345);
-
-
-const char *myShiTomasi_window = "My Shi Tomasi corner detector";
-
-
-void myShiTomasi_function(int, void *) {
-    myShiTomasi_copy = src.clone();
-    if (myShiTomasi_qualityLevel < 1) { myShiTomasi_qualityLevel = 1; }
-    for (int j = 0; j < src_gray.rows; j++) {
-        for (int i = 0; i < src_gray.cols; i++) {
-            if (myShiTomasi_dst.at<float>(j, i) > myShiTomasi_minVal +
-                                                  (myShiTomasi_maxVal - myShiTomasi_minVal) * myShiTomasi_qualityLevel /
-                                                  max_qualityLevel) { circle(myShiTomasi_copy, Point(i, j), 4,
-                                                                             Scalar(rng.uniform(0, 255),
-                                                                                    rng.uniform(0, 255),
-                                                                                    rng.uniform(0, 255)), -1, 8, 0);
-            }
-        }
+    if (img_1.empty()) {
+        cout << "Input image1 not foud" << endl;
+        return -1;
     }
-    imshow(myShiTomasi_window, myShiTomasi_copy);
-}
 
+    if (img_2.empty()) {
+        cout << "Input image2 not foud" << endl;
+        return -1;
+    }
 
-int main(int, char **argv) {
-    string input = "../data/building.jpg";
-    src = imread(input, IMREAD_COLOR);
-    cvtColor(src, src_gray, COLOR_BGR2GRAY);
+    //-- Step 1: Detect the keypoints using SURF Detector
+    int minHessian = 400;
+    Ptr<SURF> detector = SURF::create( minHessian );
 
-    int blockSize = 3;
-    int apertureSize = 3;
+    vector<KeyPoint> keypoints_1, keypoints_2;
 
-    myShiTomasi_dst = Mat::zeros(src_gray.size(), CV_32FC1);
+    detector->detect( img_1, keypoints_1 );
+    detector->detect( img_2, keypoints_2 );
 
-    cornerMinEigenVal(src_gray, myShiTomasi_dst, blockSize, apertureSize, BORDER_DEFAULT);
+    //-- Draw keypoints
+    Mat img_keypoints_1 = img_1.clone();
+    Mat img_keypoints_2 = img_2.clone();
 
-    minMaxLoc(myShiTomasi_dst, &myShiTomasi_minVal, &myShiTomasi_maxVal, 0, 0, Mat());
+    drawKeypoints(img_1, keypoints_1, img_keypoints_1);
+    drawKeypoints(img_2, keypoints_2, img_keypoints_2);
 
-    namedWindow(myShiTomasi_window, WINDOW_AUTOSIZE);
-    createTrackbar(" Quality Level:", myShiTomasi_window, &myShiTomasi_qualityLevel, max_qualityLevel,
-                   myShiTomasi_function);
-    myShiTomasi_function(0, 0);
+//    drawKeypoints( img_1, keypoints_1, img_keypoints_1, Scalar::all(-1), DrawMatchesFlags::DEFAULT );
+//    drawKeypoints( img_2, keypoints_2, img_keypoints_2, Scalar::all(-1), DrawMatchesFlags::DEFAULT );
+    //-- Show detected (drawn) keypoints
+    imshow("Keypoints 1", img_keypoints_1 );
+    imshow("Keypoints 2", img_keypoints_2 );
     waitKey(0);
-    return (0);
+    return 0;
 }
-
-
-
